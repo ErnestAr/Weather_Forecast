@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">Weather Dashboard</nav>
+    </header>
+    <main class="row">
+        <section class="asideleft col-3">
+            <div>
+                <h3 class="formhead">Welcome to the website</h3>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn btn-primary btnleft">Submit</button>
+                </form>
+              <ul class="locationlist">
+                  <li></li>
+              </ul>
+            </div>
+        </section>
+        <section class="asideright col-9">
+            <div class="maininfo">
+                <h1>Test <i></i></h1>
+                <p>Test</p>
+                <p>Test</p>
+                <p>TEst</p>
+                <p>Test <span id="uv"></span></p>
+            </div>
+            <h2 class = "forehd">5-Day forecast:</h2>
+            <ul class="forecast row ">
+                <li class="col-2"> <h5>Monday</h5><i></i><p>temp</p><p>pressure</p><p>rain</p></li>
+                <li class="col-2"></li>
+                <li class="col-2"></li>
+                <li class="col-2"></li>
+                <li class="col-2"></li>
+            </ul>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>
