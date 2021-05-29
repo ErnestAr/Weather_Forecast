@@ -17,7 +17,7 @@
             <div>
                 <h3 class="formhead">Welcome to the website</h3>
                 <form>
-                        <input type="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp">
                     
                     <button type="submit" class="btn btn-primary btnleft">Submit</button>
                 </form>
@@ -26,17 +26,24 @@
               </ul>
             </div>
         </section>
-        <section class="asideright col-9">
+        <section class="asideright col-8 hide">
             <div class="maininfo">
-                <h1>Test <i></i></h1>
+                <div class="uv row justify content-start">
+                    <h1   >Test </h1>
+                    <h1   >Test </h1>
+                    <img src="" alt=" " style="width: fit-content; height: fit-content;">
+                </div>
                 <p>Test</p>
                 <p>Test</p>
                 <p>TEst</p>
-                <p>Test <span id="uv"></span></p>
+                <div class="uv row justify content-start">
+                    <p class="col-1" style="width: fit-content;"></p>
+                    <p class= "col-1" style="width: fit-content;"></p>
+                </div>
             </div>
-            <h2 class = "forehd">5-Day forecast:</h2>
-            <ul class="forecast row ">
-                <li class="col-2"> <h5>Monday</h5><i></i><p>temp</p><p>pressure</p><p>rain</p></li>
+            <h2 class = "forehd hide">5-Day forecast:</h2>
+            <ul class="forecast row hide">
+                <li class="col-2"> <h5>Monday</h5><img src="" alt=""><p>temp</p><p>pressure</p><p>rain</p></li>
                 <li class="col-2"></li>
                 <li class="col-2"></li>
                 <li class="col-2"></li>
@@ -45,6 +52,7 @@
         </section>
     </main>
     <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>

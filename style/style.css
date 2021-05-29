@@ -1,5 +1,5 @@
 * {
-    border: 2px black solid;
+    /* border: 2px black solid; */
     margin: 0px 0px 0px 0px;
     padding: 0px;
     
@@ -13,7 +13,21 @@ ul {
 p {
     height: fit-content;
 }
+ .maininfo h1  {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+    
+  
+}
 
+
+.uv {
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+}
 
 .navbar {
     height: 100px;
@@ -34,6 +48,9 @@ p {
 
 .maininfo {
     height: 300px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-left: 15px;
 
 }
 
@@ -67,3 +84,6 @@ p {
     margin: 0px;
 }
 
+.hide {
+    display: none;
+}
