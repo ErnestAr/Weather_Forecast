@@ -7,20 +7,28 @@ var rightHide = $(".asideright")
 var foreHd = $(".forehd")
 
 var api = "6e4ceb0e004fbf2de1aefec5c659a282"
-
+var preLoc = []
 var count=0;
 
 
-
-
-
 //Display saves cities and 
-// function displayLS() {
+function showLocList () {
+  var lastLoc = localStorage.getItem("cities")
+  if(lastLoc!==null) {
+     var arr = lastLoc.split(",")
+    for (let i = 0; i < arr.length; i++) {
+      
+      var newLi = $("<li>")
+      newLi.text(arr[i])
+      newLi.attr("class", arr[i])
+      locationList.append(newLi)
+  }
+  }
 
-// }
+}
 // Add location to the list if it's not in the list, add location to local storage
 function saveLocation(location) {
-          hasloc = false;
+          var hasloc = false;
           var loclist = locationList.children()
           console.log(loclist);
           for (let i = 0; i < loclist.length; i++) {
@@ -35,26 +43,28 @@ function saveLocation(location) {
             newLi.attr("class", location)
             locationList.append(newLi)
             hasLoc = false;
-            localStorage.setItem( count, location)
+            preLoc.push(location)
+            localStorage.setItem( "cities", preLoc)
             count++
           }
       }
 
-
-
+      
 //initiate data fetching and display obtained data 
 function getDataAPI(location) {
     var url = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=" + api + "&units=metric"
-    fetch(url)
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (data) {
-          // console.log(data);
+    fetch(url).then(function (response) {
+      if (response.ok) {
+        response.json().then(function (data) {
           todayInfo(data);
           foreCast(data);
         });
-}
+      } else {
+        window.alert("Brah...Try again.")
+        locationList.children().last().addClass('hide');
+      }
+    })
+  }
 
 //Display weather info for the current day, show uv danger level with coloring 
 function todayInfo(data) {
@@ -128,3 +138,4 @@ submitButton.on("click",  function(event) {
  })
 
 
+$(document).ready(showLocList()) 
