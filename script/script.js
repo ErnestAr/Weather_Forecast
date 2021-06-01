@@ -58,10 +58,10 @@ function getDataAPI(location) {
         response.json().then(function (data) {
           todayInfo(data);
           foreCast(data);
+          saveLocation(location)
         });
       } else {
-        window.alert("Brah...Try again.")
-        locationList.children().last().addClass('hide');
+        window.alert("Brah.....")
       }
     })
   }
@@ -78,13 +78,13 @@ function todayInfo(data) {
       var uv = data.current.uvi
       mainInfo.children().eq(4).children().eq(1).text(uv)
       if (0 <=  uv && uv < 3) {
-        mainInfo.children().eq(4).children().eq(1).attr("style", "background-color: green; border-radius: 3px;");
+        mainInfo.children().eq(4).children().eq(1).attr("style", "background-color: #06D6A0; border-radius: 3px;");
       } else if (3 <= uv && uv <6) {
-        mainInfo.children().eq(4).children().eq(1).attr("style", "background-color: yellow; border-radius: 3px;");
+        mainInfo.children().eq(4).children().eq(1).attr("style", "background-color: #FCFF4B; border-radius: 3px;");
       } else if (6 <= uv && uv < 7) {
-        mainInfo.children().eq(4).children().eq(1).attr("style", "background-color: orange; border-radius: 3px;");
+        mainInfo.children().eq(4).children().eq(1).attr("style", "background-color: #FFAD05; border-radius: 3px;");
       } else if (7 <= uv ) {
-        mainInfo.children().eq(4).children().eq(1).attr("style", "background-color: red; border-radius: 3px;");
+        mainInfo.children().eq(4).children().eq(1).attr("style", "background-color: #EE6352; border-radius: 3px;");
       }
     });
     mainInfo.children().eq(0).children().eq(0).text(data.name)
@@ -125,8 +125,6 @@ submitButton.on("click",  function(event) {
     event.preventDefault()
     var location = submitButton.parent().children().eq(0).val()
     getDataAPI(location)   
-    // foreCast(location)
-    saveLocation(location)
 })
 
 //Call data by clicking location in the list

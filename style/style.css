@@ -5,6 +5,11 @@
     
 }
 
+main {
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
 
 ul {
     list-style: none;
@@ -13,6 +18,8 @@ ul {
 p {
     height: fit-content;
 }
+
+
  .maininfo h1  {
     width: fit-content;
     height: fit-content;
@@ -21,7 +28,10 @@ p {
     padding: 0px;
 }
 
-
+#inputloc {
+    font-size: 25px;
+    padding: 5px 0px;
+}
 .uv {
     width: 100%;
     margin:0px;
@@ -29,19 +39,33 @@ p {
 }
 
 .navbar {
-    height: 100px;
+    height: fit-content;
     font-size: 70px;
     text-align: center;
     display: block;
+    background-color: #B5D2CB;
+    padding: 10px;
+    
 
 }
 
 .formhead {
-    text-align: center;
+    text-align: left;
+    margin: 10px 0px;
 }
 
 .btnleft {
     width: 100%;
+    font-size: 25px;
+    background-color: #B5D2CB;
+    border: #B5D2CB;
+
+}
+.btnleft:focus {
+    background-color: #B5D2CB;
+}
+.btnleft:hover {
+    background-color: #7fcfbd;
 
 }
 
@@ -55,20 +79,22 @@ p {
 
 .locationlist li {
     width: 100%;
-    background-color: grey;
+    background-color: #6A706E;
     border-radius: 3px;
     height: fit-content;
     list-style: none;
     margin-top: 10px;
     text-align: center;
     font-size: 25px;
+    padding: 5px 0px;
+    cursor: pointer;
 
 }
 
 .forecast li{
     margin-right: 20px;
     height: fit-content;
-    background-color: darkblue;
+    background-color: #6A706E ;
     color: aliceblue;
     border-radius: 3px;
     margin-right: 10px;
@@ -87,4 +113,9 @@ p {
 
 .hide {
     display: none;
+}
+
+.locationlist {
+    border-top: 2px solid black;
+    margin-top: 15px;
 }
