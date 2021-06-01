@@ -1,121 +1,111 @@
 * {
-    /* border: 2px black solid; */
-    margin: 0px 0px 0px 0px;
-    padding: 0px;
-    
+  /* border: 2px black solid; */
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
 }
 
 main {
-    padding-left: 20px;
-    padding-top: 15px;
+  padding-left: 20px;
+  padding-top: 15px;
 }
-
 
 ul {
-    list-style: none;
-    padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
 p {
-    height: fit-content;
+  height: fit-content;
 }
 
-
- .maininfo h1  {
-    width: fit-content;
-    height: fit-content;
-    margin: 0px ;
-    margin-left: 10px;
-    padding: 0px;
+.maininfo h1 {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px;
+  margin-left: 10px;
+  padding: 0px;
 }
 
 #inputloc {
-    font-size: 25px;
-    padding: 5px 0px;
+  font-size: 25px;
+  padding: 5px 0px;
 }
 .uv {
-    width: 100%;
-    margin:0px;
-    padding: 0px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 .navbar {
-    height: fit-content;
-    font-size: 70px;
-    text-align: center;
-    display: block;
-    background-color: #B5D2CB;
-    padding: 10px;
-    
-
+  height: fit-content;
+  font-size: 70px;
+  text-align: center;
+  display: block;
+  background-color: #b5d2cb;
+  padding: 10px;
 }
 
 .formhead {
-    text-align: left;
-    margin: 10px 0px;
+  text-align: left;
+  margin: 10px 0px;
 }
 
 .btnleft {
-    width: 100%;
-    font-size: 25px;
-    background-color: #B5D2CB;
-    border: #B5D2CB;
-
+  width: 100%;
+  font-size: 25px;
+  background-color: #b5d2cb;
+  border: #b5d2cb;
 }
 .btnleft:focus {
-    background-color: #B5D2CB;
+  background-color: #b5d2cb;
 }
 .btnleft:hover {
-    background-color: #7fcfbd;
-
+  background-color: #7fcfbd;
 }
 
 .maininfo {
-    height: 300px;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding-left: 15px;
-
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding-left: 15px;
 }
 
 .locationlist li {
-    width: 100%;
-    background-color: #6A706E;
-    border-radius: 3px;
-    height: fit-content;
-    list-style: none;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 25px;
-    padding: 5px 0px;
-    cursor: pointer;
-
+  width: 100%;
+  background-color: #6a706e;
+  border-radius: 3px;
+  height: fit-content;
+  list-style: none;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+  padding: 5px 0px;
+  cursor: pointer;
 }
 
-.forecast li{
-    margin-right: 20px;
-    height: fit-content;
-    background-color: #6A706E ;
-    color: aliceblue;
-    border-radius: 3px;
-    margin-right: 10px;
-
+.forecast li {
+  margin-right: 20px;
+  height: fit-content;
+  background-color: #6a706e;
+  color: aliceblue;
+  border-radius: 3px;
+  margin-right: 10px;
 }
 
 #uv {
-    background-color: aqua;
-    color: white;
-    border-radius: 3px;
+  background-color: aqua;
+  color: white;
+  border-radius: 3px;
 }
 
 .forecast {
-    margin: 0px;
+  margin: 0px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .locationlist {
-    border-top: 2px solid black;
-    margin-top: 15px;
+  border-top: 2px solid black;
+  margin-top: 15px;
 }
