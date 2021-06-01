@@ -123,7 +123,7 @@ function todayInfo(data) {
     .eq(2)
     .attr(
       "src",
-      "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png"
+      "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png"
     );
   mainInfo
     .children()
@@ -172,7 +172,7 @@ function foreCast(data) {
           .eq(1)
           .attr(
             "src",
-            "http://openweathermap.org/img/w/" +
+            "https://openweathermap.org/img/w/" +
               forecastData[i].weather[0].icon +
               ".png"
           );
