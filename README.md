@@ -15,10 +15,11 @@
 
 ## Languages and resources
 1. Javascript
-2. CSS
-3. Bootstarp
-4. jQuery
-5. Moment.js
+2. HTML
+3. CSS
+4. Bootstarp
+5. jQuery
+6. Moment.js
 ## Collabarations:
 Solo project
 ## License:
