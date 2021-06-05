@@ -12,6 +12,24 @@
 7. Locations entered during the session saved to local storage.
 8. All the locations entered in the LAST session displayed when the page is loaded.
 9. If location is nonexistent, user gets an alert and the location does not display or save to local storage.
+
+## Languages and resources
+1. Javascript
+2. CSS
+3. Bootstarp
+4. jQuery
+5. Moment.js
+## Collabarations:
+Solo project
+## License:
+Copyright <2021> <Ernest Arutiunian>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 
 ## Website's Deployed link:
 * https://ernestar.github.io/Weather_Forecast/
 
