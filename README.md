@@ -20,7 +20,7 @@
 4. Bootstarp
 5. jQuery
 6. Moment.js
-## Collabarations:
+## Collaborations:
 Solo project
 ## License:
 Copyright <2021> <Ernest Arutiunian>
